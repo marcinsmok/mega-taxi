@@ -23,13 +23,22 @@ background-position: center;
 background-attachment: fixed;
 
 }
+h1, .welcome{
+    text-align: left;
+    position: relative;
+top:65%;
+left:10%;
+color:black
+}
 h1{
-    text-align: left;
-    z-index:1;
-}
+    font-size:80px;
+} 
+
 .welcome{
-    text-align: left;
+    font-size: 40px;
 }
+ 
+
 nav{
     position:fixed;
     background-color: black;
@@ -41,13 +50,14 @@ nav{
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
+    z-index: 1;
  
     
 }
 
 nav li{
     display: inline-block;
-    /* vertical-align:middle; */
+  
       
 }
 
@@ -74,28 +84,40 @@ section{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-        height:100vh;
-        width: 80%;
-        text-align: center;
-        margin:20vh;
+justify-content: center;   
+position: relative;    
+ height:100vh;
+        width: 100vw;
+              text-align: center;
         padding-top:10vh;
         }
+ section::before {    
+            content: "";
+            background-image: url('img/banner.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.10;}
 div{
-    width:50vw;
+    
+    padding-top:30vh;
+    width: 45%;
     height:100vh;
+    align-content: center
+    
 }
-        .taxi-picture{
-            max-height:50%;
-            max-width:50%;
+        img{
+            max-height:60%;
+            max-width:60vw;
+            border-radius: 15%;
         }
 h2{
     margin:20px;
+    text-align: center;
 }
 p{margin:5px;
 padding: 10px; }
 
-.about-taxi{
-    width: 100%;
-    height: 100%;
-    align-content: center;}
