@@ -107,7 +107,7 @@ position: relative;
             opacity: 0.10;}
 div{
     
-    padding-top:30vh;
+    padding-top:15vh;
     margin-left: 60px;
     width: 45%;
     height:100vh;
@@ -115,8 +115,8 @@ div{
     
 }
         img{
-            max-height:60%;
-            max-width:60vw;
+            max-height:70%;
+            max-width:70vw;
             border-radius: 15%;
         }
 h2{
@@ -129,4 +129,11 @@ padding: 10px; }
 
 h4{
     margin:20px;
+}
+
+th{
+    padding:20px;
+}
+.book{
+    align-self: center;
 }
