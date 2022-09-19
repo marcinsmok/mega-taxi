@@ -161,25 +161,19 @@ h3{
 table{
     margin: 0 auto;
 }
-#delivery{
-    height:80vh;
-}
-footer{
-    display: flex;
-    height:20vh;
-    width: 95vw;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-       
-}
-.foot{
-    display: flex;
-    flex-direction: column;
-    height:0vh;
-    align-items: center;
-    justify-content: center;
-}
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 @media (max-width: 800px){
    
    
@@ -212,7 +206,7 @@ footer{
         flex-direction: column;
         height:100vh;
         padding-top:12vh;
-        width:95vw;
+        width:100vw;
     }
 
     .text-content{
@@ -232,18 +226,16 @@ footer{
     width:20vw;
     height:10vh;}
 
-#airports{
+#airports section{
     display:flex;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    /* height:80% */
 }
     table{
         margin:0;
     }
 #delivery{
     height:100vh;
-}
-footer{
-    width:100%;
 }
 
 }
