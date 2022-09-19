@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:calc(15px + 0.0390625vw);
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:aliceblue;
+}
+
+header{
+    top:0;
+    width:100%;
+    height: 100vh;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+background-position: center;
+background-attachment: fixed;
+position: relative;
+}
+.title{
+    position: absolute;
+    left:5vw;
+    bottom:18vh;
+    font-size: 3rem;
+    color:black
+}
+nav{
+    position: fixed;
+    top:0;
+    background-color: black;
+    padding: 5vh;
+    text-decoration: none;
+    border-bottom: 0.5px solid;
+    height: 10vh;
+    width: 100%;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    z-index: 1;
+    mix-blend-mode:hard-light;
+}
+nav li{
+    display: inline-block;
+}
+
+.menu {
+    text-decoration: none;
+    color:aliceblue;
+    margin:.8rem;
+    padding:.8rem;
+    width: 100%;
+    text-transform: lowercase;
+}
+
+body, main{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    margin: 2rem;
+    width:50%;
+}
+.text{
+    width:90%;
+}
+
+p{
+    margin:1rem;
+}
+.image{
+    width:50%;
+
+}
+
+
+@media (max-width: 800px){
+   
+   
+   .title{
+    font-size: 2rem;
+   } 
+
+   nav{
+    font-size: 1rem;
+   
+       }
+   section{
+        flex-direction: column;
+        min-height:100vh;
+        padding-top:12vh;
+        width:95vw;
+    }
+
+    .text-content{
+        width:90vw;
+    }
+
+    .image{
+        width:100vw;
+    }
+    img{
+        width:100vw;
+    }
+#airports{
+    flex-direction: column-reverse;
+    padding-top: 0;
+    }
+    table{
+        padding-bottom: 20vh;
+    }
+}
