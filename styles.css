@@ -102,7 +102,7 @@ section::before{
     background-position: center;
     background-size: cover;
     position: absolute;
-    opacity: 20%;
+    opacity: 15%;
     height: 100%;
     width: 100%;
     z-index: -1
@@ -113,6 +113,7 @@ section{
     width: 99vw;
     align-items: center;
     text-align: center;
+    
       
 }
 
@@ -121,10 +122,14 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap:2rem;
     margin: 2rem;
+    padding:1rem;
     width:50%;
-    background-color: rbga(0, 0, 0, 1);
+    height:50%;
+    /* background-color: hsla(55, 4%, 50%, 0.45); */
+    border-radius: 1rem;
     
   
     
@@ -134,23 +139,47 @@ section{
 }
 
 p{
-    margin:1rem;
+    margin:.5rem;
 }
 .image {
+    display: flex;
     width:50%;
+    height: 60%;
+    justify-content: center;
     align-items: center;
+    margin:2rem;
     
 }
 img{
     max-width:90%;
-    /* display:block; */
+    border-radius: 1rem;;
+   
 }
-
+h3{
+    margin:2rem;
+}
 table{
     margin: 0 auto;
 }
-
-
+#delivery{
+    height:80vh;
+}
+footer{
+    display: flex;
+    height:20vh;
+    width: 95vw;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+       
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    height:0vh;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 800px){
    
    
@@ -187,12 +216,12 @@ table{
     }
 
     .text-content{
-        width:90vw;
+        width:95vw;
         height:100vh;
     }
 
     .image{
-        width:100vw;
+        width:95vw;
         height: 100vh;
     
     }
@@ -202,4 +231,19 @@ table{
 .logo{
     width:20vw;
     height:10vh;}
+
+#airports{
+    display:flex;
+    flex-direction: column-reverse;
+}
+    table{
+        margin:0;
+    }
+#delivery{
+    height:100vh;
+}
+footer{
+    width:100%;
+}
+
 }
